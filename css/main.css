@@ -1,0 +1,20 @@
+.wrapper {
+  margin: 2em auto 0 auto;
+  width: 80%; }
+
+.buttons {
+  float: right;
+  width: 17%; }
+
+.text {
+	width: 71%;
+}
+
+input {
+  font-size: x-large;
+  padding: 2.1em;
+  width: 100%; }
+
+button {
+  height: 5.05em;
+  width: 8em; }

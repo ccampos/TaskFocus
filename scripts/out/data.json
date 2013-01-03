@@ -1,0 +1,564 @@
+{
+    "project": {},
+    "files": {
+        "jquery/jquery.cookie.js": {
+            "name": "jquery/jquery.cookie.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "jquery/jquery.dynatree.js": {
+            "name": "jquery/jquery.dynatree.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "jquery/jquery.inputmask.js": {
+            "name": "jquery/jquery.inputmask.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "main.js": {
+            "name": "main.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {},
+    "classitems": [
+        {
+            "file": "jquery/jquery.cookie.js",
+            "line": 1,
+            "description": "Cookie plugin\n\nCopyright (c) 2006 Klaus Hartl (stilbuero.de)\nDual licensed under the MIT and GPL licenses:\nhttp://www.opensource.org/licenses/mit-license.php\nhttp://www.gnu.org/licenses/gpl.html",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.cookie.js",
+            "line": 11,
+            "description": "Create a cookie with the given name and value and other optional parameters.",
+            "example": [
+                " $.cookie('the_cookie', 'the_value');",
+                " $.cookie('the_cookie', 'the_value', { expires: 7, path: '/', domain: 'jquery.com', secure: true });",
+                " $.cookie('the_cookie', 'the_value');",
+                " $.cookie('the_cookie', null);"
+            ],
+            "desc": "Delete a cookie by passing null as value. Keep in mind that you have to use the same path and domain\n      used when the cookie was set.",
+            "params": [
+                {
+                    "name": "String",
+                    "description": "name The name of the cookie."
+                },
+                {
+                    "name": "String",
+                    "description": "value The value of the cookie."
+                },
+                {
+                    "name": "Object",
+                    "description": "options An object literal containing key/value pairs to provide optional cookie attributes."
+                }
+            ],
+            "option": "Boolean secure If true, the secure attribute of the cookie will be set and the cookie transmission will\n                       require a secure protocol (like HTTPS).",
+            "type": "undefined",
+            "name": "$.cookie",
+            "cat": "Plugins/Cookie",
+            "author": "Klaus Hartl/klaus.hartl@stilbuero.de",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.cookie.js",
+            "line": 42,
+            "description": "Get the value of a cookie with the given name.",
+            "example": [
+                " $.cookie('the_cookie');"
+            ],
+            "desc": "Get the value of a cookie.",
+            "params": [
+                {
+                    "name": "String",
+                    "description": "name The name of the cookie."
+                }
+            ],
+            "return": {
+                "description": "The value of the cookie."
+            },
+            "type": "String",
+            "name": "$.cookie",
+            "cat": "Plugins/Cookie",
+            "author": "Klaus Hartl/klaus.hartl@stilbuero.de",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 1,
+            "description": "jquery.dynatree.js\nDynamic tree view control, with support for lazy loading of branches.\n\nCopyright (c) 2008-2011, Martin Wendt (http://wwWendt.de)\nDual licensed under the MIT or GPL Version 2 licenses.\nhttp://code.google.com/p/dynatree/wiki/LicenseInfo\n\nA current version and some documentation is available at\n\thttp://dynatree.googlecode.com/\n\n$Version: 1.2.1_rc3$\n$Revision: 1.1 $",
+            "depends": ": jquery.cookie.js",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 23,
+            "description": "Debug functions",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 30,
+            "description": "Usage: logMsg(\"%o was toggled\", this);",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 73,
+            "description": "Constants",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 84,
+            "description": "Common tool functions.",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 113,
+            "description": "Class DynaTreeNode",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 120,
+            "is_constructor": 1,
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 168,
+            "description": "Update node data. If dict contains 'children', then also replace\nthe hole sub tree.",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 238,
+            "description": "Make sure, that <li> order matches childList order.",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 260,
+            "description": "Create <li><span>..</span> .. </li> tags for this node.\n\n<li id='KEY' dtnode=NODE> // This div contains the node's span and list of child div's.\n  <span class='title'>S S S A</span> // Span contains graphic spans and title <a> tag\n  <ul> // only present, when node has children\n      <li id='KEY' dtnode=NODE>child1</li>\n      <li id='KEY' dtnode=NODE>child2</li>\n  </ul>\n</li>",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 398,
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 420,
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 513,
+            "description": "cmd: optional compare function.\ndeep: optional: pass true to sort all descendant nodes.",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 627,
+            "description": "Return node depth. 0: System root node, 1: visible top-level node.",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 640,
+            "description": "event.target points to the outer span.\nThis function should fix issue #93:\nFF2 ignores empty spans, when generating events (returning the parent instead).",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 836,
+            "description": "Fix selection and partsel status, of parent nodes, according to current status of\nend nodes.",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 877,
+            "description": "Fix selection status, after this node was (de)selected in multi-hier mode.\nThis includes (de)selecting all children.",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 1097,
+            "description": "scheduleAction('cancel') will cancel the request.",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 1467,
+            "description": "Make sure the node with a given key path is available in the tree.",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 1530,
+            "description": "Internal function to add one single DynatreeNode as a child.",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 1645,
+            "description": "Add a node object as child.\n\nThis should be the only place, where a DynaTreeNode is constructed!\n(Except for the root node creation in the tree constructor)",
+            "params": [
+                {
+                    "name": "obj",
+                    "description": "A JS object (may be recursive) or an array of those."
+                },
+                {
+                    "name": "beforeNode",
+                    "description": "(optional) sibling node.\n\nData format: array of node objects, with optional 'children' attributes.\n[\n\t{ title: \"t1\", isFolder: true, ... }\n\t{ title: \"t2\", isFolder: true, ...,\n\t\tchildren: [\n\t\t\t{title: \"t2.1\", ..},\n\t\t\t{..}\n\t\t\t]\n\t}\n]\nA simple object is also accepted instead of an array.",
+                    "type": "DynaTreeNode"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 1768,
+            "description": "mode 'child': append this node as last child of targetNode.\n              This is the default. To be compatble with the D'n'd\n              hitMode, we also accept 'over'.\nmode 'before': add this node as sibling before targetNode.\nmode 'after': add this node as sibling after targetNode.",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 1901,
+            "description": "class DynaTreeStatus",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 2021,
+            "description": "class DynaTree",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 2637,
+            "description": "Handles drag'n'drop functionality.\n\nA standard jQuery drag-and-drop process may generate these calls:\n\ndraggable helper():\n    _onDragEvent(\"helper\", sourceNode, null, event, null, null);\nstart:\n    _onDragEvent(\"start\", sourceNode, null, event, ui, draggable);\ndrag:\n    _onDragEvent(\"leave\", prevTargetNode, sourceNode, event, ui, draggable);\n    _onDragEvent(\"over\", targetNode, sourceNode, event, ui, draggable);\n    _onDragEvent(\"enter\", targetNode, sourceNode, event, ui, draggable);\nstop:\n    _onDragEvent(\"drop\", targetNode, sourceNode, event, ui, draggable);\n    _onDragEvent(\"leave\", targetNode, sourceNode, event, ui, draggable);\n    _onDragEvent(\"stop\", sourceNode, null, event, ui, draggable);",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 2811,
+            "description": "Widget $(..).dynatree",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 2972,
+            "description": "Tools in ui.dynatree namespace",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 2977,
+            "description": "Return a DynaTreeNode object for a given DOM element",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 3012,
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 3015,
+            "description": "Plugin default options:",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 3137,
+            "description": "Reserved data attributes for a tree node.",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.dynatree.js",
+            "line": 3165,
+            "description": "Drag and drop support",
+            "class": ""
+        },
+        {
+            "file": "jquery/jquery.inputmask.js",
+            "line": 1,
+            "license": "Input Mask plugin for jquery\nhttp://github.com/RobinHerbots/jquery.inputmask\nCopyright (c) 2010 - 2012 Robin Herbots\nLicensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)\nVersion: 1.0.24",
+            "class": ""
+        },
+        {
+            "file": "main.js",
+            "line": 50,
+            "description": "Returns list of tasks",
+            "itemtype": "method",
+            "name": "getTaskList",
+            "params": [
+                {
+                    "name": "taskListJ",
+                    "description": "",
+                    "type": "Json array"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "main.js",
+            "line": 66,
+            "description": "Returns a task description",
+            "itemtype": "method",
+            "name": "getTask",
+            "params": [
+                {
+                    "name": "task",
+                    "description": "",
+                    "type": "Json object"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "main.js",
+            "line": 79,
+            "description": "Returns a JSON object",
+            "itemtype": "method",
+            "name": "getJSON",
+            "params": [
+                {
+                    "name": "url",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "class": ""
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: desc",
+            "line": " jquery/jquery.cookie.js:11"
+        },
+        {
+            "message": "unknown tag: desc",
+            "line": " jquery/jquery.cookie.js:11"
+        },
+        {
+            "message": "unknown tag: desc",
+            "line": " jquery/jquery.cookie.js:11"
+        },
+        {
+            "message": "unknown tag: desc",
+            "line": " jquery/jquery.cookie.js:11"
+        },
+        {
+            "message": "unknown tag: option",
+            "line": " jquery/jquery.cookie.js:11"
+        },
+        {
+            "message": "unknown tag: option",
+            "line": " jquery/jquery.cookie.js:11"
+        },
+        {
+            "message": "unknown tag: option",
+            "line": " jquery/jquery.cookie.js:11"
+        },
+        {
+            "message": "unknown tag: option",
+            "line": " jquery/jquery.cookie.js:11"
+        },
+        {
+            "message": "unknown tag: name",
+            "line": " jquery/jquery.cookie.js:11"
+        },
+        {
+            "message": "unknown tag: cat",
+            "line": " jquery/jquery.cookie.js:11"
+        },
+        {
+            "message": "unknown tag: desc",
+            "line": " jquery/jquery.cookie.js:42"
+        },
+        {
+            "message": "unknown tag: name",
+            "line": " jquery/jquery.cookie.js:42"
+        },
+        {
+            "message": "unknown tag: cat",
+            "line": " jquery/jquery.cookie.js:42"
+        },
+        {
+            "message": "unknown tag: depends",
+            "line": " jquery/jquery.dynatree.js:1"
+        },
+        {
+            "message": "unknown tag: depends",
+            "line": " jquery/jquery.dynatree.js:1"
+        },
+        {
+            "message": "unknown tag: depends",
+            "line": " jquery/jquery.dynatree.js:1"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " jquery/jquery.inputmask.js:1"
+        },
+        {
+            "message": "Missing item type\nCookie plugin\n\nCopyright (c) 2006 Klaus Hartl (stilbuero.de)\nDual licensed under the MIT and GPL licenses:\nhttp://www.opensource.org/licenses/mit-license.php\nhttp://www.gnu.org/licenses/gpl.html",
+            "line": " jquery/jquery.cookie.js:1"
+        },
+        {
+            "message": "Missing item type\nCreate a cookie with the given name and value and other optional parameters.",
+            "line": " jquery/jquery.cookie.js:11"
+        },
+        {
+            "message": "Missing item type\nGet the value of a cookie with the given name.",
+            "line": " jquery/jquery.cookie.js:42"
+        },
+        {
+            "message": "Missing item type\njquery.dynatree.js\nDynamic tree view control, with support for lazy loading of branches.\n\nCopyright (c) 2008-2011, Martin Wendt (http://wwWendt.de)\nDual licensed under the MIT or GPL Version 2 licenses.\nhttp://code.google.com/p/dynatree/wiki/LicenseInfo\n\nA current version and some documentation is available at\n\thttp://dynatree.googlecode.com/\n\n$Version: 1.2.1_rc3$\n$Revision: 1.1 $",
+            "line": " jquery/jquery.dynatree.js:1"
+        },
+        {
+            "message": "Missing item type\nDebug functions",
+            "line": " jquery/jquery.dynatree.js:23"
+        },
+        {
+            "message": "Missing item type\nUsage: logMsg(\"%o was toggled\", this);",
+            "line": " jquery/jquery.dynatree.js:30"
+        },
+        {
+            "message": "Missing item type\nConstants",
+            "line": " jquery/jquery.dynatree.js:73"
+        },
+        {
+            "message": "Missing item type\nCommon tool functions.",
+            "line": " jquery/jquery.dynatree.js:84"
+        },
+        {
+            "message": "Missing item type\nClass DynaTreeNode",
+            "line": " jquery/jquery.dynatree.js:113"
+        },
+        {
+            "message": "Missing item type",
+            "line": " jquery/jquery.dynatree.js:120"
+        },
+        {
+            "message": "Missing item type\nUpdate node data. If dict contains 'children', then also replace\nthe hole sub tree.",
+            "line": " jquery/jquery.dynatree.js:168"
+        },
+        {
+            "message": "Missing item type\nMake sure, that <li> order matches childList order.",
+            "line": " jquery/jquery.dynatree.js:238"
+        },
+        {
+            "message": "Missing item type\nCreate <li><span>..</span> .. </li> tags for this node.\n\n<li id='KEY' dtnode=NODE> // This div contains the node's span and list of child div's.\n  <span class='title'>S S S A</span> // Span contains graphic spans and title <a> tag\n  <ul> // only present, when node has children\n      <li id='KEY' dtnode=NODE>child1</li>\n      <li id='KEY' dtnode=NODE>child2</li>\n  </ul>\n</li>",
+            "line": " jquery/jquery.dynatree.js:260"
+        },
+        {
+            "message": "Missing item type",
+            "line": " jquery/jquery.dynatree.js:398"
+        },
+        {
+            "message": "Missing item type",
+            "line": " jquery/jquery.dynatree.js:420"
+        },
+        {
+            "message": "Missing item type\ncmd: optional compare function.\ndeep: optional: pass true to sort all descendant nodes.",
+            "line": " jquery/jquery.dynatree.js:513"
+        },
+        {
+            "message": "Missing item type\nReturn node depth. 0: System root node, 1: visible top-level node.",
+            "line": " jquery/jquery.dynatree.js:627"
+        },
+        {
+            "message": "Missing item type\nevent.target points to the outer span.\nThis function should fix issue #93:\nFF2 ignores empty spans, when generating events (returning the parent instead).",
+            "line": " jquery/jquery.dynatree.js:640"
+        },
+        {
+            "message": "Missing item type\nFix selection and partsel status, of parent nodes, according to current status of\nend nodes.",
+            "line": " jquery/jquery.dynatree.js:836"
+        },
+        {
+            "message": "Missing item type\nFix selection status, after this node was (de)selected in multi-hier mode.\nThis includes (de)selecting all children.",
+            "line": " jquery/jquery.dynatree.js:877"
+        },
+        {
+            "message": "Missing item type\nscheduleAction('cancel') will cancel the request.",
+            "line": " jquery/jquery.dynatree.js:1097"
+        },
+        {
+            "message": "Missing item type\nMake sure the node with a given key path is available in the tree.",
+            "line": " jquery/jquery.dynatree.js:1467"
+        },
+        {
+            "message": "Missing item type\nInternal function to add one single DynatreeNode as a child.",
+            "line": " jquery/jquery.dynatree.js:1530"
+        },
+        {
+            "message": "Missing item type\nAdd a node object as child.\n\nThis should be the only place, where a DynaTreeNode is constructed!\n(Except for the root node creation in the tree constructor)",
+            "line": " jquery/jquery.dynatree.js:1645"
+        },
+        {
+            "message": "Missing item type\nmode 'child': append this node as last child of targetNode.\n              This is the default. To be compatble with the D'n'd\n              hitMode, we also accept 'over'.\nmode 'before': add this node as sibling before targetNode.\nmode 'after': add this node as sibling after targetNode.",
+            "line": " jquery/jquery.dynatree.js:1768"
+        },
+        {
+            "message": "Missing item type\nclass DynaTreeStatus",
+            "line": " jquery/jquery.dynatree.js:1901"
+        },
+        {
+            "message": "Missing item type\nclass DynaTree",
+            "line": " jquery/jquery.dynatree.js:2021"
+        },
+        {
+            "message": "Missing item type\nHandles drag'n'drop functionality.\n\nA standard jQuery drag-and-drop process may generate these calls:\n\ndraggable helper():\n    _onDragEvent(\"helper\", sourceNode, null, event, null, null);\nstart:\n    _onDragEvent(\"start\", sourceNode, null, event, ui, draggable);\ndrag:\n    _onDragEvent(\"leave\", prevTargetNode, sourceNode, event, ui, draggable);\n    _onDragEvent(\"over\", targetNode, sourceNode, event, ui, draggable);\n    _onDragEvent(\"enter\", targetNode, sourceNode, event, ui, draggable);\nstop:\n    _onDragEvent(\"drop\", targetNode, sourceNode, event, ui, draggable);\n    _onDragEvent(\"leave\", targetNode, sourceNode, event, ui, draggable);\n    _onDragEvent(\"stop\", sourceNode, null, event, ui, draggable);",
+            "line": " jquery/jquery.dynatree.js:2637"
+        },
+        {
+            "message": "Missing item type\nWidget $(..).dynatree",
+            "line": " jquery/jquery.dynatree.js:2811"
+        },
+        {
+            "message": "Missing item type\nTools in ui.dynatree namespace",
+            "line": " jquery/jquery.dynatree.js:2972"
+        },
+        {
+            "message": "Missing item type\nReturn a DynaTreeNode object for a given DOM element",
+            "line": " jquery/jquery.dynatree.js:2977"
+        },
+        {
+            "message": "Missing item type",
+            "line": " jquery/jquery.dynatree.js:3012"
+        },
+        {
+            "message": "Missing item type\nPlugin default options:",
+            "line": " jquery/jquery.dynatree.js:3015"
+        },
+        {
+            "message": "Missing item type\nReserved data attributes for a tree node.",
+            "line": " jquery/jquery.dynatree.js:3137"
+        },
+        {
+            "message": "Missing item type\nDrag and drop support",
+            "line": " jquery/jquery.dynatree.js:3165"
+        },
+        {
+            "message": "Missing item type",
+            "line": " jquery/jquery.inputmask.js:1"
+        }
+    ]
+}
